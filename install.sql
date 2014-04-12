@@ -1,0 +1,11 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+CREATE TABLE IF NOT EXISTS `etc_kwhs` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(256) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `access_token` varchar(256) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `access_token_secret` varchar(256) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2438340043 ;
